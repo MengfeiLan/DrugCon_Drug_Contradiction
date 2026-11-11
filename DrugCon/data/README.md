@@ -17,7 +17,6 @@ contextual factors that may explain the disagreement.
 | File | Rows | Description |
 | --- | --- | --- |
 | `contradictory_claim_pairs.csv` | 542 | Gold contradictory pairs with both claims, both abstracts, and human factor labels. |
-| `candidate_pairs.csv` | 1,731 | All candidate claim pairs over the 819 abstracts after entity pairing and dense filtering (cosine ≥ 0.7). The 542 gold pairs are a subset. |
 | `abstracts.csv` | 819 | Source abstracts. |
 | `abstract_sentences.csv` | 819 | Sentence-split abstracts with predicted rhetorical labels used for claim (conclusion) extraction. |
 | `gpt41nano_pipeline_outputs.csv` | 542 | Outputs of the original DrugCon run (GPT-4.1-nano) that seeded annotation: detection reasoning and explanation responses. |
@@ -31,15 +30,6 @@ contextual factors that may explain the disagreement.
 | `claim_1`, `claim_2` | Conclusion sentence(s) extracted from each abstract. |
 | `claim_abs_1`, `claim_abs_2` | Full abstract text for each claim. |
 | `human_labeled_contextual_factors` | Python-list string of gold factor labels, e.g. `['population', 'outcome measures']`. |
-
-#### `candidate_pairs.csv`
-
-| Column | Description |
-| --- | --- |
-| `pair_id` | Row identifier. |
-| `pmid_1`, `claim_1`, `pmid_2`, `claim_2` | The two claims and their source PMIDs. |
-| `shared_entities` | Drug (`Chemical`) and disease (`Disease`) entities shared by both claims (PubTator 3, MeSH-normalised). |
-| `cosine_similarity` | BioHiCL-Base cosine similarity between the two claims. |
 
 #### `abstract_sentences.csv`
 
