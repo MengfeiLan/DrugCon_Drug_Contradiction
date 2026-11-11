@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drugcon"
+version = "1.0.0"
+description = "Detecting and explaining contradictory drug-disease claims in RCT abstracts with LLMs (DrugCon / DrugCon-Bench)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Mengfei Lan" },
+  { name = "Joe Menke" },
+  { name = "Shiwei Liu" },
+  { name = "Zhiyong Lu" },
+  { name = "Halil Kilicoglu" },
+]
+keywords = ["contradiction detection", "biomedical NLP", "LLM", "randomized controlled trials", "benchmark"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.40"]
+bedrock = ["boto3>=1.35"]
+all = ["openai>=1.40", "boto3>=1.35"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

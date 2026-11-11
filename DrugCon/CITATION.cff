@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use DrugCon or DrugCon-Bench, please cite the paper below."
+title: "DrugCon: Detecting Contradictory Evidence on Drug-Disease Associations at Scale"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Lan
+    given-names: Mengfei
+  - family-names: Menke
+    given-names: Joe
+  - family-names: Liu
+    given-names: Shiwei
+  - family-names: Lu
+    given-names: Zhiyong
+  - family-names: Kilicoglu
+    given-names: Halil
+preferred-citation:
+  type: article
+  title: "Detecting Contradictory Evidence on Drug-Disease Associations at Scale"
+  journal: "medRxiv"
+  year: 2026
+  authors:
+    - family-names: Lan
+      given-names: Mengfei
+    - family-names: Menke
+      given-names: Joe
+    - family-names: Liu
+      given-names: Shiwei
+    - family-names: Lu
+      given-names: Zhiyong
+    - family-names: Kilicoglu
+      given-names: Halil
