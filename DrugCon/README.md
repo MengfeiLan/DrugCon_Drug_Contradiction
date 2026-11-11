@@ -42,9 +42,6 @@ DrugCon/
 │   ├── item_level_explanation.py
 │   ├── make_paper_tables.py    # regenerate Tables 2, 3, C1
 │   └── export_prompts.py       # regenerate docs/prompts.md
-├── results/
-│   ├── runs/                   # raw model outputs for every reported run (.csv.gz + _meta.json)
-│   └── tables/                 # scored metrics; paper/ holds the paper tables
 └── docs/prompts.md             # every prompt, and which result it backs
 ```
 
